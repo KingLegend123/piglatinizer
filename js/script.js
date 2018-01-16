@@ -8,9 +8,12 @@
 $( document ).ready(function() {
   
 
-
-
-});
+  $("#submit").click(function(){
+    console.log("help")
+    var sentence= $("input").val();
+    $("#result").append(sentence);
+   });  
+ });
 
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
